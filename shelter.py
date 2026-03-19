@@ -63,3 +63,6 @@ class Bird(Animal): #inherits from Animal
 dog1 = Dog("Rex", age=3, weight=20, breed="Labrador")
 cat1 = Cat("Mimi", age=2, weight=4, breed="Persian")
 bird1 = Bird("Tweety", age=1, weight=0.5, can_fly=True)
+
+class Shelter:
+    

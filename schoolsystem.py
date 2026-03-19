@@ -66,16 +66,13 @@ class School:
     def __getitem__(self, index):
         return self.staff[index]
     
-     def hire(self, staff):
+    def hire(self, staff):
         self.staff.append(staff)
         print(f"{staff.name} hired at {self.name}")
 
     def fire(self, staff):
-        if staff in self.staff:
-            self.staff.remove(staff)
-            print(f"{staff.name} has been let go")
-        else:
-            print(f"{staff.name} not found")
+        self.staff.remove(staff)
+        print(f"{staff.name} has been let go")
 
     def __len__(self):
         return self.staff
